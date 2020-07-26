@@ -9,7 +9,6 @@ pipeline{
             }
         }
         stage('next_stage'){
-
         when {
             anyOf {
                 environment name: 'CI_SKIP', value: 'false'
