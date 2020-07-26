@@ -4,7 +4,7 @@ pipeline{
         stage('validate change log'){
             steps{
                 script{
-                    this.check()
+                    check()
                 }
             }
         }
