@@ -26,7 +26,8 @@ def check() {
         error "NOT_BUILT"
     }
     }catch(e){
-        currentBuild.result = 'SUCCESS'
         throw e
+        currentBuild.result = 'SUCCESS'
+        
     }
 }
