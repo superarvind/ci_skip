@@ -3,7 +3,9 @@ pipeline{
     stages{
         stage('validate change log'){
             steps{
-                check
+                script{
+                    check
+                }
             }
         }
         stage('next_stage'){
