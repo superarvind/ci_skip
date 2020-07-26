@@ -8,6 +8,7 @@
 
 ### Added
 
+- istio: ABC-123 update regex
 - fix: ABC-123 update regex
 - feat: ABC-123 changes for Jenkinsfile
 - fix: ABC-123 changes for readme
