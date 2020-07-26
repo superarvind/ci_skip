@@ -10,7 +10,7 @@ pipeline{
         }
         stage('next_stage'){
             steps{
-                echo "In next_stage after CI commit check, and is working fine"
+                echo "In next_stage after CI commit check, and is working."
             }
         }
     }
