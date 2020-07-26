@@ -10,7 +10,7 @@ pipeline{
         }
         stage('next_stage'){
             steps{
-                echo "In next_stage after CI commit check, and is working"
+                echo "In next_stage after CI commit check, and is working fine"
             }
         }
     }
@@ -23,7 +23,6 @@ def check() {
     if (result != 0) {
         env.CI_SKIP = "true"
         error "No matching pattern found in git commit message. Expected regex (istio|release)+: [A-Z]{2,4}-[0-9]{0,5}\\s+.*'"
-        
     }
     }catch(e){
         currentBuild.result = 'NOT_BUILT'
