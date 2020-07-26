@@ -27,6 +27,6 @@ def check() {
     }
     }catch(e){
         currentBuild.result = 'NOT_BUILT'
-        //throw e
+        throw e
     }
 }
